@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - CV</title>
+    <title>Elshad Rzayev - CV</title>
     <style>
       * {
         margin: 0;
@@ -132,12 +132,14 @@
       .degree {
         font-weight: bold;
         color: #1976d2;
+        font-size: 1.1em;
       }
 
       .company,
       .institution {
         color: #666;
         font-style: italic;
+        margin-top: 5px;
       }
 
       .date {
@@ -146,16 +148,26 @@
         background: #e3f2fd;
         padding: 5px 10px;
         border-radius: 15px;
+        white-space: nowrap;
       }
 
       .description {
-        margin-top: 10px;
+        margin-top: 15px;
         line-height: 1.6;
+      }
+
+      .description ul {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .description li {
+        margin-bottom: 8px;
       }
 
       .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
       }
 
@@ -168,7 +180,8 @@
 
       .skill-category h4 {
         color: #2196f3;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        font-size: 1.1em;
       }
 
       .skill-list {
@@ -176,8 +189,9 @@
       }
 
       .skill-list li {
-        padding: 5px 0;
+        padding: 8px 0;
         border-bottom: 1px solid #e3f2fd;
+        line-height: 1.4;
       }
 
       .skill-list li:last-child {
@@ -188,6 +202,23 @@
         font-size: 1.1em;
         line-height: 1.8;
         text-align: justify;
+        background: #f8fbff;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #2196f3;
+      }
+
+      .certificates-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+      }
+
+      .certificate-item {
+        background: #f8fbff;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #e3f2fd;
       }
 
       @media (max-width: 768px) {
@@ -226,6 +257,10 @@
           flex-direction: column;
           gap: 10px;
         }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -234,10 +269,10 @@
       <header class="header">
         <div class="profile-section">
           <div class="profile-photo">
-            <!-- Replace 'path/to/your/photo.jpg' with your actual photo path -->
+            <!-- Replace 'profile-photo.jpg' with your actual photo file -->
             <img
-              src="path/to/your/photo.jpg"
-              alt="Your Name"
+              src="profile-photo.jpg"
+              alt="Elshad Rzayev"
               style="
                 width: 100%;
                 height: 100%;
@@ -248,26 +283,29 @@
             />
           </div>
           <div class="profile-info">
-            <h1>Your Full Name</h1>
-            <p>Professional Title / Job Position</p>
+            <h1>Elshad Rzayev</h1>
+            <p>Sourcing Manager / Category Advisor</p>
           </div>
         </div>
         <div class="contact-info">
-          <span>📧 your.email@example.com</span>
-          <span>📱 +1 (555) 123-4567</span>
-          <span>📍 City, State, Country</span>
-          <span>🔗 linkedin.com/in/yourprofile</span>
+          <span>📧 elshadrzayev@yahoo.com</span>
+          <span>📱 +36 30 456 6785</span>
+          <span>📍 Budapest, Hungary</span>
+          <span>🔗 linkedin.com/in/elshadrzayev</span>
         </div>
       </header>
 
       <section class="section">
-        <h2>About Me</h2>
+        <h2>Professional Summary</h2>
         <p class="about-text">
-          A brief professional summary highlighting your key strengths,
-          experience, and career objectives. This section should capture the
-          reader's attention and provide a snapshot of who you are as a
-          professional. Mention your years of experience, key skills, and what
-          you're passionate about in your field.
+          Results-driven procurement and supply chain professional with 16 years
+          of experience. Proven expertise in category management, strategic
+          sourcing, and supplier relationship management. Experienced in working
+          for consultancy firms and leading diverse teams to drive operational
+          excellence. Skilled in managing OEM suppliers and negotiating complex
+          global agreements to optimize costs and enhance supply chain
+          efficiency. Adept at executing high-value projects and ensuring
+          seamless procurement processes in dynamic, global environments.
         </p>
       </section>
 
@@ -277,47 +315,189 @@
         <div class="job">
           <div class="job-header">
             <div>
-              <div class="job-title">Senior Software Developer</div>
-              <div class="company">Tech Company Inc.</div>
+              <div class="job-title">
+                Sourcing Manager - Engineered Equipment and Services
+              </div>
+              <div class="company">
+                BP (British Petroleum), Budapest, Hungary
+              </div>
             </div>
-            <div class="date">Jan 2022 - Present</div>
+            <div class="date">Feb 2023 - Present</div>
           </div>
           <div class="description">
-            Led development of multiple web applications using modern
-            technologies. Collaborated with cross-functional teams to deliver
-            high-quality software solutions. Mentored junior developers and
-            improved team productivity by 30%.
+            <ul>
+              <li>
+                Served as Category Advisor to the Instrument, Control, and
+                Electrical (ICE) Global Category Manager, ensuring the execution
+                of category strategy across regions
+              </li>
+              <li>
+                Led and managed a team supporting regional and central
+                locations, ensuring optimal resource allocation for sourcing,
+                contracting, and contract management activities
+              </li>
+              <li>
+                Negotiated complex global agreements with Electrical, Telecoms,
+                and Automation OEM contractors, addressing legal clauses,
+                remuneration terms, and scope of work
+              </li>
+              <li>
+                Partnered with category teams to align market approach and
+                sourcing activities with engineered equipment category
+                strategies
+              </li>
+              <li>
+                Executed critical sourcing and contracting activities with core
+                and strategic category suppliers, driving cost efficiencies and
+                improving project execution timelines
+              </li>
+              <li>
+                Led continuous improvement initiatives to optimize sourcing
+                processes, reduce costs, and enhance supplier performance
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="job">
           <div class="job-header">
             <div>
-              <div class="job-title">Software Developer</div>
-              <div class="company">Digital Solutions Ltd.</div>
+              <div class="job-title">Procurement Project Execution Analyst</div>
+              <div class="company">BP (British Petroleum), Azerbaijan</div>
             </div>
-            <div class="date">Jun 2019 - Dec 2021</div>
+            <div class="date">Aug 2016 - Feb 2023</div>
           </div>
           <div class="description">
-            Developed and maintained web applications using JavaScript, React,
-            and Node.js. Implemented responsive designs and optimized
-            application performance. Participated in code reviews and agile
-            development processes.
+            <ul>
+              <li>
+                Developed and presented market approach strategies, sourcing
+                plans, and contract award proposals to the Contract Governance
+                Board
+              </li>
+              <li>
+                Collaborated with project teams to define procurement
+                requirements, timelines, and budgets, developing procurement
+                plans aligned with project goals
+              </li>
+              <li>
+                Conducted supplier market analysis to identify potential
+                vendors, solicited bids, and evaluated suppliers based on cost,
+                quality, delivery time, and reliability
+              </li>
+              <li>
+                Executed end-to-end procurement processes, including issuing
+                RFPs, RFQs, and RFIs. Led bid evaluations and vendor selection
+              </li>
+              <li>
+                Reviewed, drafted, and negotiated Concept Development, EPC, and
+                EPCM contracts, ensuring clear deliverables and pricing
+                structures
+              </li>
+              <li>
+                Led a Data Science initiative to develop a predictive model that
+                improved project estimation accuracy for equipment rates
+              </li>
+              <li>
+                Developed an energy economic model using Python Object-Oriented
+                Programming (OOP) to analyze cost and efficiency metrics
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="job">
           <div class="job-header">
             <div>
-              <div class="job-title">Junior Developer</div>
-              <div class="company">StartUp Innovations</div>
+              <div class="job-title">Procurement Consultant</div>
+              <div class="company">Arc Blue, United Kingdom</div>
             </div>
-            <div class="date">Aug 2017 - May 2019</div>
+            <div class="date">Jan 2013 - May 2016</div>
           </div>
           <div class="description">
-            Assisted in building web applications and mobile apps. Gained
-            experience in full-stack development and learned modern development
-            frameworks. Contributed to bug fixes and feature implementations.
+            <ul>
+              <li>
+                Planned and executed consulting projects focused on cost
+                reduction opportunities across clients' supply bases
+              </li>
+              <li>
+                Designed and developed procurement training programs tailored to
+                client needs, incorporating skills assessments
+              </li>
+              <li>
+                Delivered training courses on procurement and supply chain
+                topics, including CIPS-accredited courses such as Effective
+                Negotiation, Contract Management, Contract Law, Finance in
+                Procurement
+              </li>
+              <li>
+                Led sales pitch meetings and client consultations to identify
+                procurement training needs and develop customized training
+                workshops
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Procurement Manager</div>
+              <div class="company">
+                Dizayn Qrup Aksesuarlari Ltd, Azerbaijan
+              </div>
+            </div>
+            <div class="date">Jul 2008 - Oct 2010</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>
+                Developed, implemented, and executed sourcing strategies for
+                various product categories in the construction industry
+              </li>
+              <li>
+                Negotiated, awarded, and managed supplier contracts across
+                European and Asian markets, maximizing cost savings
+              </li>
+              <li>
+                Managed 3rd Party Logistics Service Providers (3PLs) to develop
+                cost-effective transportation solutions
+              </li>
+              <li>
+                Executed schedule-driven procurement activities for private and
+                public sector construction projects
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Procurement Manager Assistant</div>
+              <div class="company">Hilal Elektrik Ltd, Azerbaijan & Turkey</div>
+            </div>
+            <div class="date">Nov 2005 - Jun 2008</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>
+                Issued purchase orders to suppliers manufacturing electrical
+                equipment, air conditioning systems, and oil & gas equipment
+              </li>
+              <li>
+                Resolved supplier invoice discrepancies, ensuring adherence to
+                contractual payment terms
+              </li>
+              <li>
+                Monitored and evaluated supplier performance, collaborating with
+                vendors to implement continuous improvement initiatives
+              </li>
+              <li>
+                Prepared tender documentation for Public Sector Procurement
+                Projects, ensuring full compliance with governmental agency
+                requirements
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -328,15 +508,77 @@
         <div class="education-item">
           <div class="education-header">
             <div>
-              <div class="degree">Bachelor of Science in Computer Science</div>
-              <div class="institution">University of Technology</div>
+              <div class="degree">MBA, Strategy and Procurement Management</div>
+              <div class="institution">
+                University of Birmingham, Birmingham Business School
+              </div>
             </div>
-            <div class="date">2013 - 2017</div>
+            <div class="date">Sep 2011 - Dec 2012</div>
           </div>
           <div class="description">
-            Graduated Magna Cum Laude. Relevant coursework: Data Structures,
-            Algorithms, Software Engineering, Database Systems, Web Development.
+            Key Modules: Business Strategy and Supply Chain Management. Project:
+            Incubator Business Project with start-up company "PlayDna".
+            Graduated with Merit.
           </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <div class="degree">
+                MSc, Organization of Business in Oil Processing and
+                Petrochemical Industries
+              </div>
+              <div class="institution">
+                Azerbaijan State Oil Academy, Faculty of Economics
+              </div>
+            </div>
+            <div class="date">Sep 2003 - Dec 2005</div>
+          </div>
+          <div class="description">
+            Dissertation: Project work in Azerbaijan Oil Processing Plant -
+            Analysis of Business Strategy of organization and proposition
+            possible solutions to problem. GPA: 4 of 5.
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <div class="degree">
+                BSc, Management in Oil Processing and Petrochemical Industries
+              </div>
+              <div class="institution">
+                Azerbaijan State Oil Academy, Faculty of Economics
+              </div>
+            </div>
+            <div class="date">Sep 1999 - Jun 2003</div>
+          </div>
+          <div class="description">
+            GPA: 4.6 of 5. Awarded Scholarship. Internship: One month internship
+            in Azerbaijan Oil Processing Plant.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Certificates</h2>
+        <div class="certificates-list">
+          <div class="certificate-item">
+            MCIPS - Full Member of Chartered Institute of Procurement and Supply
+          </div>
+          <div class="certificate-item">
+            DevOps Engineering Nano Degree Course in Udacity
+          </div>
+          <div class="certificate-item">Advanced Python Course in Udemy</div>
+          <div class="certificate-item">bp Data Science Foundation Course</div>
+          <div class="certificate-item">
+            Deep Neural Network Course in Coursera
+          </div>
+          <div class="certificate-item">
+            JavaScript and HTML/CSS courses in Udemy
+          </div>
+          <div class="certificate-item">AWS Cloud Fundamentals</div>
         </div>
       </section>
 
@@ -344,39 +586,41 @@
         <h2>Skills</h2>
         <div class="skills-grid">
           <div class="skill-category">
-            <h4>Programming Languages</h4>
+            <h4>Languages</h4>
             <ul class="skill-list">
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>TypeScript</li>
+              <li>English - Full Professional Proficiency</li>
+              <li>Turkish - Professional Working Proficiency</li>
+              <li>Russian - Native or Bilingual Proficiency</li>
             </ul>
           </div>
           <div class="skill-category">
-            <h4>Frameworks & Libraries</h4>
+            <h4>Procurement & Sourcing</h4>
             <ul class="skill-list">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Django</li>
+              <li>Category Management</li>
+              <li>Strategic Sourcing</li>
+              <li>Supplier Relationship Management</li>
+              <li>Contract Negotiation</li>
+              <li>Supply Chain Management</li>
             </ul>
           </div>
           <div class="skill-category">
-            <h4>Tools & Technologies</h4>
+            <h4>Software & Platforms</h4>
             <ul class="skill-list">
-              <li>Git</li>
-              <li>Docker</li>
-              <li>AWS</li>
-              <li>MongoDB</li>
+              <li>One Source Ariba (Sourcing Platform)</li>
+              <li>Backbone (SAP)</li>
+              <li>Python Programming (Pandas, Numpy, scikit-learn)</li>
+              <li>JavaScript Programming</li>
+              <li>AWS Cloud, Docker, Kubernetes</li>
             </ul>
           </div>
           <div class="skill-category">
-            <h4>Soft Skills</h4>
+            <h4>Industry Expertise</h4>
             <ul class="skill-list">
-              <li>Team Leadership</li>
-              <li>Project Management</li>
-              <li>Problem Solving</li>
-              <li>Communication</li>
+              <li>Oil & Gas Industry</li>
+              <li>Engineered Equipment</li>
+              <li>EPC/EPCM Contracts</li>
+              <li>OEM Supplier Management</li>
+              <li>Data Science & Analytics</li>
             </ul>
           </div>
         </div>
