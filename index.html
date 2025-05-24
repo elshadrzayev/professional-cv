@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - CV</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 20px rgba(33, 150, 243, 0.1);
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #2196f3, #64b5f6);
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        margin: -20px -20px 30px -20px;
+      }
+
+      .profile-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .profile-info {
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+
+      .header p {
+        font-size: 1.2em;
+        opacity: 0.9;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        color: #2196f3;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e3f2fd;
+        padding-bottom: 10px;
+      }
+
+      .section h3 {
+        color: #1976d2;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+      }
+
+      .job,
+      .education-item {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: #f8fbff;
+        border-left: 4px solid #2196f3;
+        border-radius: 5px;
+      }
+
+      .job-header,
+      .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+
+      .job-title,
+      .degree {
+        font-weight: bold;
+        color: #1976d2;
+      }
+
+      .company,
+      .institution {
+        color: #666;
+        font-style: italic;
+      }
+
+      .date {
+        color: #666;
+        font-size: 0.9em;
+        background: #e3f2fd;
+        padding: 5px 10px;
+        border-radius: 15px;
+      }
+
+      .description {
+        margin-top: 10px;
+        line-height: 1.6;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-category {
+        background: #f8fbff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e3f2fd;
+      }
+
+      .skill-category h4 {
+        color: #2196f3;
+        margin-bottom: 10px;
+      }
+
+      .skill-list {
+        list-style: none;
+      }
+
+      .skill-list li {
+        padding: 5px 0;
+        border-bottom: 1px solid #e3f2fd;
+      }
+
+      .skill-list li:last-child {
+        border-bottom: none;
+      }
+
+      .about-text {
+        font-size: 1.1em;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 10px;
+          padding: 15px;
+        }
+
+        .header {
+          padding: 30px 20px;
+          margin: -15px -15px 20px -15px;
+        }
+
+        .profile-section {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .profile-photo {
+          width: 120px;
+          height: 120px;
+          font-size: 2.5em;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .job-header,
+        .education-header {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="profile-section">
+          <div class="profile-photo">
+            <!-- Replace 'path/to/your/photo.jpg' with your actual photo path -->
+            <img
+              src="path/to/your/photo.jpg"
+              alt="Your Name"
+              style="
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+              "
+              onerror="this.style.display='none'; this.parentElement.innerHTML='👤';"
+            />
+          </div>
+          <div class="profile-info">
+            <h1>Your Full Name</h1>
+            <p>Professional Title / Job Position</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <span>📧 your.email@example.com</span>
+          <span>📱 +1 (555) 123-4567</span>
+          <span>📍 City, State, Country</span>
+          <span>🔗 linkedin.com/in/yourprofile</span>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>About Me</h2>
+        <p class="about-text">
+          A brief professional summary highlighting your key strengths,
+          experience, and career objectives. This section should capture the
+          reader's attention and provide a snapshot of who you are as a
+          professional. Mention your years of experience, key skills, and what
+          you're passionate about in your field.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Senior Software Developer</div>
+              <div class="company">Tech Company Inc.</div>
+            </div>
+            <div class="date">Jan 2022 - Present</div>
+          </div>
+          <div class="description">
+            Led development of multiple web applications using modern
+            technologies. Collaborated with cross-functional teams to deliver
+            high-quality software solutions. Mentored junior developers and
+            improved team productivity by 30%.
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Software Developer</div>
+              <div class="company">Digital Solutions Ltd.</div>
+            </div>
+            <div class="date">Jun 2019 - Dec 2021</div>
+          </div>
+          <div class="description">
+            Developed and maintained web applications using JavaScript, React,
+            and Node.js. Implemented responsive designs and optimized
+            application performance. Participated in code reviews and agile
+            development processes.
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Junior Developer</div>
+              <div class="company">StartUp Innovations</div>
+            </div>
+            <div class="date">Aug 2017 - May 2019</div>
+          </div>
+          <div class="description">
+            Assisted in building web applications and mobile apps. Gained
+            experience in full-stack development and learned modern development
+            frameworks. Contributed to bug fixes and feature implementations.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <div class="degree">Bachelor of Science in Computer Science</div>
+              <div class="institution">University of Technology</div>
+            </div>
+            <div class="date">2013 - 2017</div>
+          </div>
+          <div class="description">
+            Graduated Magna Cum Laude. Relevant coursework: Data Structures,
+            Algorithms, Software Engineering, Database Systems, Web Development.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <ul class="skill-list">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Frameworks & Libraries</h4>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Django</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Tools & Technologies</h4>
+            <ul class="skill-list">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4>Soft Skills</h4>
+            <ul class="skill-list">
+              <li>Team Leadership</li>
+              <li>Project Management</li>
+              <li>Problem Solving</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
